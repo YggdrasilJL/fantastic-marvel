@@ -1,0 +1,80 @@
+* {
+    font-family: 'Marvel', sans-serif;
+    color: rgb(170, 246, 171);
+}
+
+body {
+    background-image: url('/assets/images/fog.png'), linear-gradient(180deg, rgb(61, 14, 14) 0%, rgb(70, 20, 20) 40%);
+    
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    padding: 2vh;
+    background-color: rgba(92, 0, 0, 0.486);
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    border-radius: 20%;
+    outline: 5px rgb(158, 158, 158) double;
+}
+
+h1 {
+    color: rgb(209, 209, 209);
+    margin-bottom: 0;
+}
+
+h1:nth-child(2) {
+    color: rgb(170, 246, 171);;
+    animation: textGlow 3s ease-in-out infinite;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+img {
+    outline: 5px  rgb(158, 158, 158) double;
+    border-radius: 2vh;
+    margin: 1vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    width: 30vh;
+    height: 45vh;
+    transition: outline 1s;
+}
+
+img:hover {
+    cursor: pointer;
+    outline: 15px  rgb(158, 158, 158) double
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+@keyframes textGlow {
+    0%,
+    100% {
+      text-shadow: 0 0 4px rgba(78, 0, 147, 0.5), 0 0 8px rgba(78, 0, 147, 0.5), 0 0 12px rgba(78, 0, 147, 0.5), 0 0 16px rgba(78, 0, 147, 0.5), 0 0 20px rgba(78, 0, 147, 0.5), 0 0 24px rgba(78, 0, 147, 0.5), 0 0 28px rgba(78, 0, 147, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 4px rgba(199, 163, 231, 0.832)
+    }
+  }
+  
